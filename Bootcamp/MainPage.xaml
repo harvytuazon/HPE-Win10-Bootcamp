@@ -1,0 +1,17 @@
+﻿<Page x:Class="Bootcamp.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="using:Bootcamp"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:usercontrol="using:Bootcamp.UserControls"
+      mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <usercontrol:ProgressRingWithLabel 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="center">
+            
+        </usercontrol:ProgressRingWithLabel>
+    </Grid>
+</Page>
