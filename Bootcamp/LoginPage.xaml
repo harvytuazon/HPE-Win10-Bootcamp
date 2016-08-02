@@ -59,8 +59,8 @@
                     HorizontalAlignment="Center"
                     Orientation="Horizontal"
                     x:Name="ButtonGroup">
-            <Button Click="Button_Click" Content="Login"/>
-            <Button Click="Button_Click_1" Content="Sign up"/>
+            <Button Click="LoginClick" Content="Login"/>
+            <Button Click="SignUpClick" Content="Sign up"/>
         </StackPanel>
         <CheckBox Grid.Row="4"
                   HorizontalAlignment="Center"
@@ -72,7 +72,7 @@
                         <AdaptiveTrigger MinWindowWidth="0" />
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="ButtonGroup.Orientation" Value="Horizontal"/>
+                        <Setter Target="ButtonGroup.Orientation" Value="Vertical"/>
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState>
@@ -80,7 +80,7 @@
                         <AdaptiveTrigger MinWindowWidth="800" />
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="ButtonGroup.Orientation" Value="Vertical"/>
+                        <Setter Target="ButtonGroup.Orientation" Value="Horizontal"/>
                     </VisualState.Setters>
                 </VisualState>
                 

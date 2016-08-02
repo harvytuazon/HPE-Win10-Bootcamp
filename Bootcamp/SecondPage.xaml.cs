@@ -28,20 +28,12 @@ namespace Bootcamp
             this.InitializeComponent();
 
             var menu = new ObservableCollection<Menu>();
-            menu.Add(new Menu() { Title = "Add" });
-            menu.Add(new Menu() { Title = "Edit" });
-            menu.Add(new Menu() { Title = "Delete" });
-            menu.Add(new Menu() { Title = "Add" });
-            menu.Add(new Menu() { Title = "Edit" });
-            menu.Add(new Menu() { Title = "Delete" });
-            menu.Add(new Menu() { Title = "Add" });
-            menu.Add(new Menu() { Title = "Edit" });
-            menu.Add(new Menu() { Title = "Delete" });
-            menu.Add(new Menu() { Title = "Add" });
-            menu.Add(new Menu() { Title = "Edit" });
-            menu.Add(new Menu() { Title = "Delete" });
-            menu.Add(new Menu() { Title = "Add" });
-            menu.Add(new Menu() { Title = "Edit" });
+            menu.Add(new Menu() { Title = "Home", Icon = "\xE10F", Page = typeof(LoginPage), Checked = false });
+            menu.Add(new Menu() { Title = "Summary", Icon = "\xE125", Page = typeof(SecondPage), Checked = false });
+            menu.Add(new Menu() { Title = "Add", Icon = "\xE1E2", Page = typeof(SecondPage), Checked = true });
+            menu.Add(new Menu() { Title = "Edit", Icon = "\xE104", Page = typeof(MainPage), Checked = false });
+            menu.Add(new Menu() { Title = "Delete", Icon = "\xE1E0", Page = typeof(MainPage), Checked = false });
+            menu.Add(new Menu() { Title = "Settings", Icon = "\xE115", Page = typeof(MainPage), Checked = false });
 
             MenuList.ItemsSource = menu;
 
@@ -54,12 +46,20 @@ namespace Bootcamp
 
             UserData.Content = user;
 
-            SampleText.Text = "Hello World";
+            SampleText.Text = "The information transmitted is intended solely for the individual or entity to which it is addressed and may contain Hewlett Packard Company confidential and/or privileged material. Any review, retransmission, dissemination or other use of or taking action in reliance upon this information by persons or entities other than the intended recipient is prohibited. If you have received this email in error please contact the sender and delete the material from any computer.";
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void MenuClick(object sender, RoutedEventArgs e)
         {
             SplitMenu.IsPaneOpen = !SplitMenu.IsPaneOpen;
+        }
+
+        private void MenuItemClick(object sender, RoutedEventArgs e)
+        {
+            var button = sender as ToggleButton;
+            var data = button.Tag as Menu;
+            
+            this.Frame.Navigate(data.Page);
         }
     }
 }
