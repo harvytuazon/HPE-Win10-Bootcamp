@@ -89,6 +89,21 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <Content Include="Assets\bg.jpg" />
+    <Content Include="Assets\Fonts\MetricWeb-Black.ttf" />
+    <Content Include="Assets\Fonts\MetricWeb-BlackItalic.ttf" />
+    <Content Include="Assets\Fonts\MetricWeb-Bold.ttf" />
+    <Content Include="Assets\Fonts\MetricWeb-BoldItalic.ttf" />
+    <Content Include="Assets\Fonts\MetricWeb-Light.ttf" />
+    <Content Include="Assets\Fonts\MetricWeb-LightItalic.ttf" />
+    <Content Include="Assets\Fonts\MetricWeb-Medium.ttf" />
+    <Content Include="Assets\Fonts\MetricWeb-MediumItalic.ttf" />
+    <Content Include="Assets\Fonts\MetricWeb-Regular.ttf" />
+    <Content Include="Assets\Fonts\MetricWeb-RegularItalic.ttf" />
+    <Content Include="Assets\Fonts\MetricWeb-Semibold.ttf" />
+    <Content Include="Assets\Fonts\MetricWeb-SemiboldItalic.ttf" />
+    <Content Include="Assets\Fonts\MetricWeb-Thin.ttf" />
+    <Content Include="Assets\Fonts\MetricWeb-ThinItalic.ttf" />
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
@@ -106,6 +121,9 @@
     <Compile Include="SecondPage.xaml.cs">
       <DependentUpon>SecondPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SplashPage.xaml.cs">
+      <DependentUpon>SplashPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\ProgressRingWithLabel.xaml.cs">
       <DependentUpon>ProgressRingWithLabel.xaml</DependentUpon>
     </Compile>
@@ -118,6 +136,7 @@
     <None Include="Bootcamp_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\New Project.png" />
     <Content Include="Hewlett_Packard_Enterprise_logo.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
@@ -142,6 +161,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="SecondPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SplashPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -1,9 +1,8 @@
-﻿<Application
-    x:Class="Bootcamp.App"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Bootcamp"
-    RequestedTheme="Light">
+﻿<Application x:Class="Bootcamp.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="using:Bootcamp"
+             RequestedTheme="Light">
     <Application.Resources>
         <ResourceDictionary>
             <!--  Colors  -->
@@ -11,6 +10,10 @@
             <SolidColorBrush x:Key="PrimaryColorBrush" Color="#01A982" />
             <Color x:Key="SecondaryColor">#614767</Color>
             <SolidColorBrush x:Key="SecondaryColorBrush" Color="#614767" />
+            <Color x:Key="TertiaryColor">#FF8D6D</Color>
+            <SolidColorBrush x:Key="TertiaryColorBrush" Color="#FF8D6D" />
+            <Color x:Key="FourthColor">#2AD2C9</Color>
+            <SolidColorBrush x:Key="FourthColorBrush" Color="#2AD2C9" />
             <Color x:Key="AccentColor">#425563</Color>
             <SolidColorBrush x:Key="AccentColorBrush" Color="#425563" />
             <Color x:Key="BackgroundColor">#EEEEEE</Color>
@@ -35,6 +38,10 @@
             <SolidColorBrush x:Key="WarningColorBrush" Color="#FFD144" />
             <Color x:Key="CriticalColor">#F04953</Color>
             <SolidColorBrush x:Key="CriticalColorBrush" Color="#F04953" />
+
+            <FontFamily x:Key="MetricWebRegular">
+                ms-appx:/Assets/Fonts/MetricWeb-Regular.ttf#Metric Web
+            </FontFamily>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
